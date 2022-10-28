@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>2</title>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$(".kuning").click(function(){
+						$("#1").removeClass("kuning");
+						$("#1").addClass("merah");
+					});
+					$(".merah").click(function(){
+						$("#1").removeClass("merah");
+						$("#1").addClass("kuning");
+					});
+				});
+				$("#2").click(function(){
+					$(".kuning").click(function(){
+						$("#2").removeClass("kuning");
+						$("#2").addClass("merah");
+					});
+					$(".merah").click(function(){
+						$("#2").removeClass("merah");
+						$("#2").addClass("kuning");
+					});
+				});
+				$("#3").click(function(){
+					$(".kuning").click(function(){
+						$("#3").removeClass("kuning");
+						$("#3").addClass("merah");
+					});
+					$(".merah").click(function(){
+						$("#3").removeClass("merah");
+						$("#3").addClass("kuning");
+					});
+				});
+				$("#4").click(function(){
+					$(".kuning").click(function(){
+						$("#4").removeClass("kuning");
+						$("#4").addClass("merah");
+					});
+					$(".merah").click(function(){
+						$("#4").removeClass("merah");
+						$("#4").addClass("kuning");
+					});
+				});
+			});
+		</script>
+		<style type="text/css">
+			button{
+				border:5px outset;
+				margin:10px;
+				font-size:20px;
+			}
+			.merah{
+				width:100px;
+				height:100px;
+				background-color:red;
+			}
+			.kuning{
+				width:100px;
+				height:100px;
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="../">
+			<button><-Back</button>
+		</a>
+		<center>
+			<button id="1" class="kuning"></button>
+			<button id="2" class="kuning"></button>
+			<button id="3" class="kuning"></button>
+			<button id="4" class="kuning"></button>
+		</center>
+	</body>
+</html>

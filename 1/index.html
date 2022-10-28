@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>1</title>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".tampil1").hide("fast");
+				$(".tampil2").hide("fast");
+				$(".sembunyi1").click(function(){
+					$("#foto1").hide("slow");
+					$(".sembunyi1").hide("fast");
+					$(".tampil1").show("fast");
+				});
+				$(".tampil1").click(function(){
+					$("#foto1").show("slow");
+					$(".sembunyi1").show("fast");
+					$(".tampil1").hide("fast");
+				});
+				$(".sembunyi2").click(function(){
+					$("#foto2").hide("slow");
+					$(".sembunyi2").hide("fast");
+					$(".tampil2").show("fast");
+				});
+				$(".tampil2").click(function(){
+					$("#foto2").show("slow");
+					$(".sembunyi2").show("fast");
+					$(".tampil2").hide("fast");
+				});
+			});
+		</script>
+		<style>
+			div{
+				border:5px outset;
+				width:500px;
+				text-align:center;
+				background-color:white;
+				margin:10px;
+			}
+			img{
+				width:400px;
+			}
+			button{
+				font-size:20px;
+				border:5px outset;
+			}
+		</style>
+	</head>
+	<body bgcolor="lightblue">
+		<a href="../">
+			<button><-Back</button>
+		</a>
+		<center>
+			<div>
+				<p>
+					<img id="foto1" src="https://wx4.sinaimg.cn/mw2000/006aauYzgy1h7eyi9e93mj30ty140tg0.jpg">
+				</p>
+				<p>
+					<button class="sembunyi1">Hide</button>
+					<button class="tampil1">Show</button>
+				</p>
+			</div>
+			<div>
+				<p>
+					<img id="foto2" src="https://wx1.sinaimg.cn/mw2000/008a9Xu8gy1gw2bk3jwmij312b1kv4hh.jpg">
+				</p>
+				<p>
+					<button class="sembunyi2">Hide</button>
+					<button class="tampil2">Show</button>
+				</p>
+			</div>
+		</center>
+	</body>
+</html>
