@@ -4,44 +4,24 @@
 		<script type="text/javascript" src="../jquery.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$("#1").click(function(){
-					$(".kuning").click(function(){
-						$("#1").removeClass("kuning");
-						$("#1").addClass("merah");
-					});
-					$(".merah").click(function(){
-						$("#1").removeClass("merah");
-						$("#1").addClass("kuning");
+				$("#1").dblclick(function(){
+					$("#1").each(function(){
+						$("#1").toggleClass("merah");
 					});
 				});
-				$("#2").click(function(){
-					$(".kuning").click(function(){
-						$("#2").removeClass("kuning");
-						$("#2").addClass("merah");
-					});
-					$(".merah").click(function(){
-						$("#2").removeClass("merah");
-						$("#2").addClass("kuning");
+				$("#2").dblclick(function(){
+					$("#2").each(function(){
+						$("#2").toggleClass("merah");
 					});
 				});
-				$("#3").click(function(){
-					$(".kuning").click(function(){
-						$("#3").removeClass("kuning");
-						$("#3").addClass("merah");
-					});
-					$(".merah").click(function(){
-						$("#3").removeClass("merah");
-						$("#3").addClass("kuning");
+				$("#3").dblclick(function(){
+					$("#3").each(function(){
+						$("#3").toggleClass("merah");
 					});
 				});
-				$("#4").click(function(){
-					$(".kuning").click(function(){
-						$("#4").removeClass("kuning");
-						$("#4").addClass("merah");
-					});
-					$(".merah").click(function(){
-						$("#4").removeClass("merah");
-						$("#4").addClass("kuning");
+				$("#4").dblclick(function(){
+					$("#4").each(function(){
+						$("#4").toggleClass("merah");
 					});
 				});
 			});
@@ -52,15 +32,13 @@
 				margin:10px;
 				font-size:20px;
 			}
-			.merah{
-				width:100px;
-				height:100px;
-				background-color:red;
-			}
 			.kuning{
 				width:100px;
 				height:100px;
 				background-color:yellow;
+			}
+			.merah{
+				background-color:red;
 			}
 		</style>
 	</head>
